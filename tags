@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Point	.\max_points_on_a_line.cpp	/^	Point(int a, int b) : x(a), y(b) {}$/;"	f	struct:Point	access:public	signature:(int a, int b)
+Point	.\max_points_on_a_line.cpp	/^ 	Point() : x(0), y(0) {}$/;"	f	struct:Point	access:public	signature:()
+Point	.\max_points_on_a_line.cpp	/^struct Point {$/;"	s	file:
+Point::Point	.\max_points_on_a_line.cpp	/^	Point(int a, int b) : x(a), y(b) {}$/;"	f	struct:Point	access:public	signature:(int a, int b)
+Point::Point	.\max_points_on_a_line.cpp	/^ 	Point() : x(0), y(0) {}$/;"	f	struct:Point	access:public	signature:()
+Point::x	.\max_points_on_a_line.cpp	/^     	int x;$/;"	m	struct:Point	file:	access:public
+Point::y	.\max_points_on_a_line.cpp	/^	int y;$/;"	m	struct:Point	file:	access:public
+Solution	.\evaluate_reverse_polish_notation.cpp	/^class Solution {$/;"	c	file:
+Solution	.\max_points_on_a_line.cpp	/^class Solution {$/;"	c	file:
+Solution	.\reverse_words_in_a_string.cpp	/^class Solution{$/;"	c	file:
+Solution::evalRPN	.\evaluate_reverse_polish_notation.cpp	/^    	int evalRPN(vector<string> &tokens) {$/;"	f	class:Solution	access:public	signature:(vector<string> &tokens)
+Solution::get_a_b	.\max_points_on_a_line.cpp	/^	void get_a_b(const Point &p1, const Point &p2, double &a, double &b){$/;"	f	class:Solution	access:public	signature:(const Point &p1, const Point &p2, double &a, double &b)
+Solution::isNumber	.\evaluate_reverse_polish_notation.cpp	/^	bool isNumber(const string &s)	$/;"	f	class:Solution	access:public	signature:(const string &s)
+Solution::is_in_line	.\max_points_on_a_line.cpp	/^	bool is_in_line(const Point p, const double &a, const double &b){$/;"	f	class:Solution	access:public	signature:(const Point p, const double &a, const double &b)
+Solution::maxPoints	.\max_points_on_a_line.cpp	/^	int maxPoints(vector<Point> &points) {$/;"	f	class:Solution	access:public	signature:(vector<Point> &points)
+Solution::max_iteration	.\max_points_on_a_line.cpp	/^	const int max_iteration = 20;$/;"	m	class:Solution	file:	access:public
+Solution::reverseWords	.\reverse_words_in_a_string.cpp	/^	void reverseWords(string &s){$/;"	f	class:Solution	access:public	signature:(string &s)
+evalRPN	.\evaluate_reverse_polish_notation.cpp	/^    	int evalRPN(vector<string> &tokens) {$/;"	f	class:Solution	access:public	signature:(vector<string> &tokens)
+get_a_b	.\max_points_on_a_line.cpp	/^	void get_a_b(const Point &p1, const Point &p2, double &a, double &b){$/;"	f	class:Solution	access:public	signature:(const Point &p1, const Point &p2, double &a, double &b)
+isNumber	.\evaluate_reverse_polish_notation.cpp	/^	bool isNumber(const string &s)	$/;"	f	class:Solution	access:public	signature:(const string &s)
+is_in_line	.\max_points_on_a_line.cpp	/^	bool is_in_line(const Point p, const double &a, const double &b){$/;"	f	class:Solution	access:public	signature:(const Point p, const double &a, const double &b)
+main	.\evaluate_reverse_polish_notation.cpp	/^int main()$/;"	f	signature:()
+main	.\max_points_on_a_line.cpp	/^int main()$/;"	f	signature:()
+main	.\reverse_words_in_a_string.cpp	/^int main()$/;"	f	signature:()
+maxPoints	.\max_points_on_a_line.cpp	/^	int maxPoints(vector<Point> &points) {$/;"	f	class:Solution	access:public	signature:(vector<Point> &points)
+max_iteration	.\max_points_on_a_line.cpp	/^	const int max_iteration = 20;$/;"	m	class:Solution	file:	access:public
+reverseWords	.\reverse_words_in_a_string.cpp	/^	void reverseWords(string &s){$/;"	f	class:Solution	access:public	signature:(string &s)
+x	.\max_points_on_a_line.cpp	/^     	int x;$/;"	m	struct:Point	file:	access:public
+y	.\max_points_on_a_line.cpp	/^	int y;$/;"	m	struct:Point	file:	access:public
