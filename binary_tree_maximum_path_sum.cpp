@@ -142,6 +142,26 @@ public:
 	}
 
 	int maxPathSum(TreeNode *root) {
+		if(root == NULL)
+			return 0;
+		int max_num = root->val;
+		maxPathSum(root, max_num);
+		return max_num;
+	}
+	int maxPathSum(TreeNode *root, int &max_num){
+		if(root == NULL)
+			return -10000;
+		int temp_left = maxPathSum(root->left, max_num);
+		int temp_right = maxPathSum(root->right, max_num);
+		int add_single_node = max(root->val, root->val + max(temp_left, temp_right));	
+		int add_double_node = max(add_single_node, root->val + temp_left + temp_right);
+		add_double_node = max(add_double_node, max(temp_left, temp_right));
+		if(max_num < add_double_node)
+			max_num = add_double_node;
+		return add_single_node;
+
+	}
+/*	int maxPathSum(TreeNode *root) {
 		if(root->right == NULL && root->left == NULL)
 			return root->val;
 		else if(root->right == NULL){
@@ -160,6 +180,34 @@ public:
 			return max(single_side, double_side);		
 		}
 	}
+	*/
+/*	int maxPathSum(TreeNode *root) {
+		if(root == NULL){
+			return 0;
+		}
+		stack<pair<TreeNode *, int>> address;
+		TreeNode *temp = root;
+		int max_num = 0;
+		int single_circle = 0;
+		int flag = 0;
+		while(address.size() != 0 || temp != NULL){
+			while(temp != NULL){
+				address.push(pair<TreeNode *, int>(temp, 1));
+				temp = temp->left;
+			}
+			temp = address.top().first;
+			flag = address.top().second;
+			if(flag){
+				address.pop();
+				address.push(pair<TreeNode *, int>(temp, 0));
+			}else{
+				if(temp->left == NULL && temp->right == NULL){
+					if(max_num < single_circle)
+						max_num = single_circle;
+				}
+			}
+		}
+	}*/
 };
 
 int main()
@@ -168,10 +216,10 @@ int main()
 //	vector<int> value={-1,-2,-3,-4,-5,-6,-7};
 	vector<int> value={1,-2,-3,1,3,-2,-1};
 	for(int i = 0; i < value.size(); ++i)
-		cout << value[i];
+		cout << value[i] << " ";
 	cout << endl;
 	TreeNode *root = sol.createTree(value);
-	cout << "******************" << endl;
+/*	cout << "******************" << endl;
 	sol.DLR(root);
 	cout << endl;
 	sol.LDR(root);
@@ -186,9 +234,10 @@ int main()
 	sol.DFS(root);
 	sol.BFS(root);
 	cout << sol.maxPathSum(root) << endl;
+	*/
 	TreeNode *temp_root = new TreeNode(-2);
 	temp_root->left = new TreeNode(-1);
-	cout << sol.maxPathSum(temp_root) << endl;
+	cout << sol.maxPathSum(root) << endl;
 
 	return 0;
 }
