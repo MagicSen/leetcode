@@ -28,6 +28,7 @@ public:
 		}
 		return res;
 	}
+	
 	// Misunderstood, think it is the reverse string
 /*	vector<string> anagrams(vector<string> &strs) {
 		unordered_map<string,string> result;
@@ -55,8 +56,8 @@ public:
 int main()
 {
 	Solution sol;
-	//vector<string> test={"dog","cat","god","tac","ass"};
-	vector<string> test={"",""};
+	vector<string> test={"dog","cat","god","tac","ass"};
+//	vector<string> test={"",""};
 	cout << test.size() << endl;
 	vector<string> result = sol.anagrams(test);
 	cout << result.size() << endl;
